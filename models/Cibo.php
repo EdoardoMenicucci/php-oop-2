@@ -3,7 +3,7 @@
 class Cibo extends Product
 {
     //FUNZIONE PER SPECIFICARE LE VARIABILI TRA LE () DELL'OGGETTO/CLASSE'
-    public function __construct(public $nome, public $descrizione, public $categoria, public $tipoDiCibo, public $taglia, public $prezzo)
+    public function __construct(public $nome, public $descrizione, public Categoria $categoria, public $tipoDiCibo, public $taglia, public $prezzo)
     {
     }
 
@@ -13,7 +13,7 @@ class Cibo extends Product
     {
         echo "<li> Il Prodotto: " . $this->nome . "</li>";
         echo "<li> La Descrizione: " . $this->descrizione . "</li>";
-        echo "<li> Per: " . $this->categoria . "</li>";
+        echo "<li> " . $this->categoria->descrizione . "</li>";
         echo "<li> Tipo di cibo: " . $this->tipoDiCibo . "</li>";
         echo "<li> Taglia dell'animale: " . $this->taglia . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";

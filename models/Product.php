@@ -5,7 +5,7 @@
 class Product
 {
     //FUNZIONE PER SPECIFICARE LE VARIABILI TRA LE () DELL'OGGETTO/CLASSE'
-    public function __construct(public $nome, public $descrizione, public $categoria, public $prezzo)
+    public function __construct(public $nome, public $descrizione, public Categoria $categoria, public $prezzo)
     {
     }
 
@@ -15,7 +15,7 @@ class Product
     {
         echo "<li> Il Prodotto: " . $this->nome . "</li>";
         echo "<li> La Descrizione: " . $this->descrizione . "</li>";
-        echo "<li> Per: " . $this->categoria . "</li>";
+        echo "<li> " . $this->categoria->descrizione . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";
     }
 }
