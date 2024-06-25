@@ -58,3 +58,7 @@ $spazzolaCandure = new Generico(
 
 // ARRAY CONTENENTE TUTTI I PRODOTTI DA STAMPARE IN PAGINA CON RELATIVA FUNZIONE
 $prodotti = [$crocchetteRoyalCanin, $Whiskas, $kongExtreme, $petup, $cozy, $spazzolaCandure];
+
+//Creo un ciente
+
+$user1 = new Cliente('Mario rossi');
