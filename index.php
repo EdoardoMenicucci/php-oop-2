@@ -39,7 +39,7 @@ $carrelloUser = $user1->carrello;
     <!-- Stampo il carrello -->
     <h3>Carrello:</h3>
     <?php foreach ($carrelloUser as $key => $value) {
-        echo $value->nome;
+        echo $value->nome . '; ' . 'Prezzo: ' . $value->prezzo;
     }
     ?>
 
