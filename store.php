@@ -48,7 +48,7 @@ $cozy = new Cuccia(
     '€ 19,99'
 );
 
-$spazzolaCandure = new Product(
+$spazzolaCandure = new Generico(
     'Candure',
     'Spazzola per Cani, Pettine Gatti per Pelo Acciaio Inossidabile',
     $entrambi,
@@ -56,5 +56,5 @@ $spazzolaCandure = new Product(
 );
 
 
-
+// ARRAY CONTENENTE TUTTI I PRODOTTI DA STAMPARE IN PAGINA CON RELATIVA FUNZIONE
 $prodotti = [$crocchetteRoyalCanin, $Whiskas, $kongExtreme, $petup, $cozy, $spazzolaCandure];

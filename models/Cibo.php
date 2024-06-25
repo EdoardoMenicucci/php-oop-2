@@ -1,6 +1,6 @@
 <?php
 
-class Cibo extends Product
+class Cibo extends Generico
 {
     //FUNZIONE PER SPECIFICARE LE VARIABILI TRA LE () DELL'OGGETTO/CLASSE'
     public function __construct(public $nome, public $descrizione, public Categoria $categoria, public $tipoDiCibo, public $taglia, public $prezzo)
@@ -17,5 +17,6 @@ class Cibo extends Product
         echo "<li> Tipo di cibo: " . $this->tipoDiCibo . "</li>";
         echo "<li> Taglia dell'animale: " . $this->taglia . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";
+        echo "<li> Il prodotto e' " . get_class($this) . "</li>";
     }
 }
