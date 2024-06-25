@@ -17,6 +17,6 @@ class Cibo extends Generico
         echo "<li> Tipo di cibo: " . $this->tipoDiCibo . "</li>";
         echo "<li> Taglia dell'animale: " . $this->taglia . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";
-        echo "<li> Il prodotto e' un " . get_class($this) . "</li>";
+        echo "<li> Il prodotto e' del " . get_class($this) . "</li>";
     }
 }
