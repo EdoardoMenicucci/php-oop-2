@@ -16,6 +16,6 @@ class Cuccia extends Generico
         echo "<li>  " . $this->categoria->descrizione . "</li>";
         echo "<li> La cuccia e': " . $this->tipoDiCuccie . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";
-        echo "<li> Il prodotto e' " . get_class($this) . "</li>";
+        echo "<li> Il prodotto e' una " . get_class($this) . "</li>";
     }
 }

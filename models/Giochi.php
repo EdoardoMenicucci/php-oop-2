@@ -16,6 +16,6 @@ class Gioco extends Generico
         echo "<li> " . $this->categoria->descrizione . "</li>";
         echo "<li> Tipologia di Gioco: " . $this->tipoDiGioco . "</li>";
         echo "<li> Prezzo: " . $this->prezzo . "</li>";
-        echo "<li> Il prodotto e' " . get_class($this) . "</li>";
+        echo "<li> Il prodotto e' un " . get_class($this) . "</li>";
     }
 }
