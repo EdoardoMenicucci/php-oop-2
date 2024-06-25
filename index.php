@@ -6,10 +6,11 @@ if (isset($_POST['indexProdotto'])) {
     // Recupero il valore inviato dal form
     $indexProdotto = $_POST['indexProdotto'];
     $user1->carrello[] = $prodotti[$indexProdotto];
-    echo '<pre>' . $user1->carrello . '</pre>';
+    //TEST
+    //echo '<pre>' . $user1->carrello[0]->nome . '</pre>';
 }
 
-
+$carrelloUser = $user1->carrello;
 
 ?>
 
@@ -35,6 +36,12 @@ if (isset($_POST['indexProdotto'])) {
         </form>
         <hr>
     <?php } ?>
+    <!-- Stampo il carrello -->
+    <h3>Carrello:</h3>
+    <?php foreach ($carrelloUser as $key => $value) {
+        echo $value->nome;
+    }
+    ?>
 
 </body>
 
