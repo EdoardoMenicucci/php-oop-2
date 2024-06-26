@@ -4,7 +4,7 @@ $gatto = new Categoria('gatto', 'Adatto ai Gatti');
 
 $cane = new Categoria('cane', 'Adatto ai Cani');
 
-$entrambi = new Categoria('entrambi', 'Adatto ai gatti e cani');
+$entrambi = new Categoria('entrambi', 'Adatto a Gatti e Cani');
 
 $crocchetteRoyalCanin = new Cibo(
     'Royal Canin Dog Maxi',
@@ -59,6 +59,6 @@ $spazzolaCandure = new Generico(
 // ARRAY CONTENENTE TUTTI I PRODOTTI DA STAMPARE IN PAGINA CON RELATIVA FUNZIONE
 $prodotti = [$crocchetteRoyalCanin, $Whiskas, $kongExtreme, $petup, $cozy, $spazzolaCandure];
 
-//Creo un ciente
 
+//Creo un ciente
 $user1 = new Cliente('Mario rossi');
