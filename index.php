@@ -2,8 +2,12 @@
 include_once __DIR__ . '/data.php';
 
 
+
 //ESEMPIO DI $_SESSION PER IL CARRELLO
 session_start(); // Avvia la sessione
+
+//Carrello user collegato effettivamente all'user1
+$carrelloUser[] = $user1->carrello;
 
 //SVUOTO IL CARRELLO SE RICEVO IL POST DAL FORM 
 if (isset($_POST['svuotaCarrello'])) {
