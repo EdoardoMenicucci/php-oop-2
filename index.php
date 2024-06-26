@@ -7,7 +7,7 @@ include_once __DIR__ . '/data.php';
 session_start(); // Avvia la sessione
 
 //Carrello user collegato effettivamente all'user1
-$carrelloUser[] = $user1->carrello;
+$carrelloUser[] = $user1->carrello; //Carrello nell'user1 sarebbe l'istanza creata dalla classe Cliente che come estenzione ha un array 'carrello'
 
 //SVUOTO IL CARRELLO SE RICEVO IL POST DAL FORM 
 if (isset($_POST['svuotaCarrello'])) {
